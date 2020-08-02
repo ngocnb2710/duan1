@@ -12,9 +12,22 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/dashboard', 'AdminController@index');
+Route::group(['prefix'=>'category'],function(){
+    Route::get('list', 'CategoryController@index');
+    Route::get('add-cate','CategoryController@addForm');
+    Route::post('add','CategoryController@add');
+});
+Route::group(['prefix' => 'product'], function () {
+    Route::get('list', 'ProductController@index');
+    Route::get('add-product', 'ProductController@addForm');
+    Route::post('add', 'ProductController@add');
+    Route::get('delete', 'ProductController@delete');
+    Route::get('edit', 'ProductController@edit');
+});
