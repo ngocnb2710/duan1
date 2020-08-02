@@ -8,4 +8,7 @@ class Product extends Model
 {
     protected $table ='products';
     public $timestamps = true;
+    public function category(){
+        return $this->belongsTo('App\Models\Category','cate_id','id');
+    }
 }

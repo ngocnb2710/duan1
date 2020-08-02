@@ -14,6 +14,8 @@
             <th scope="col">Price</th>
             <th scope="col">Image</th>
             <th scope="col">Description</th>
+            <th scope="col">Action</th>
+            <th scope="col"></th>
         </tr>
         </thead>
         <tbody>
@@ -24,7 +26,8 @@
                 <td>{{$item->price}}</td>
                 <td><img width="500px" src="{{$item->image}}" alt=""></td>
                 <td>{{$item->description}}</td>
-                <td><a href=""></a></td>
+                <td><a href="/product/edit-form/{{$item->id}}" class="btn btn-primary">Edit</a></td>
+                <td><a href="/product/delete/{{$item->id}}" class="btn btn-danger">Delete</a></td>
             </tr>
         @endforeach
         </tbody>

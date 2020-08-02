@@ -28,6 +28,7 @@ Route::group(['prefix' => 'product'], function () {
     Route::get('list', 'ProductController@index');
     Route::get('add-product', 'ProductController@addForm');
     Route::post('add', 'ProductController@add');
-    Route::get('delete', 'ProductController@delete');
-    Route::get('edit', 'ProductController@edit');
+    Route::get('delete/{id}', 'ProductController@delete');
+    Route::get('edit-form/{id}', 'ProductController@editForm');
+    Route::post('edit/{id}', 'ProductController@edit');
 });
