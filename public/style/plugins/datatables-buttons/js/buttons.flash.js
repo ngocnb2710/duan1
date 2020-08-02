@@ -83,7 +83,7 @@ var ZeroClipboard_TableTools = {
 	},
 
 	dispatch: function(id, eventName, args) {
-		// receive event from flash movie, send to client
+		// receive event from flash movie, send to clients
 		var client = this.clients[id];
 		if (client) {
 			client.receiveEvent(eventName, args);
@@ -95,7 +95,7 @@ var ZeroClipboard_TableTools = {
 	},
 
 	register: function(id, client) {
-		// register new client to receive events
+		// register new clients to receive events
 		this.clients[id] = client;
 	},
 
@@ -126,14 +126,14 @@ var ZeroClipboard_TableTools = {
 	},
 
 	Client: function(elem) {
-		// constructor for new simple upload client
+		// constructor for new simple upload clients
 		this.handlers = {};
 
 		// unique ID
 		this.id = ZeroClipboard_TableTools.nextId++;
 		this.movieId = 'ZeroClipboard_TableToolsMovie_' + this.id;
 
-		// register client with singleton to receive flash events
+		// register clients with singleton to receive flash events
 		ZeroClipboard_TableTools.register(this.id, this);
 
 		// create movie
@@ -1396,7 +1396,7 @@ DataTable.ext.buttons.excelFlash = $.extend( {}, flashButton, {
 	},
 
 	extension: '.xlsx',
-	
+
 	createEmptyCells: false
 } );
 

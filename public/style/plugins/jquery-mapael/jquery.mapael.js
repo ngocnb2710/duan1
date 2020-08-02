@@ -765,8 +765,8 @@
          *          ** from this point, we have relative map coordinate
          *          - Apply translation: take into accounts the current panning of the map
          *          ** from this point, we have absolute map coordinate
-         * @param pageX: mouse client coordinate on X
-         * @param pageY: mouse client coordinate on Y
+         * @param pageX: mouse clients coordinate on X
+         * @param pageY: mouse clients coordinate on Y
          * @return map coordinate {x, y}
          */
         mapPagePositionToXY: function(pageX, pageY) {

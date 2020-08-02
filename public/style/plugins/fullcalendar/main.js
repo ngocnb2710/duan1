@@ -277,7 +277,7 @@ Docs & License: https://fullcalendar.io/
         var borderRight = parseInt(computedStyle.borderRightWidth, 10) || 0;
         var borderTop = parseInt(computedStyle.borderTopWidth, 10) || 0;
         var borderBottom = parseInt(computedStyle.borderBottomWidth, 10) || 0;
-        // must use offset(Width|Height) because compatible with client(Width|Height)
+        // must use offset(Width|Height) because compatible with clients(Width|Height)
         var scrollbarLeftRight = sanitizeScrollbarWidth(el.offsetWidth - el.clientWidth - borderLeft - borderRight);
         var scrollbarBottom = sanitizeScrollbarWidth(el.offsetHeight - el.clientHeight - borderTop - borderBottom);
         var res = {
@@ -4398,7 +4398,7 @@ Docs & License: https://fullcalendar.io/
         var endMarker = framingRange.end;
         var instanceStarts = [];
         while (dayMarker < endMarker) {
-            var instanceStart 
+            var instanceStart
             // if everyday, or this particular day-of-week
             = void 0;
             // if everyday, or this particular day-of-week
@@ -7261,7 +7261,7 @@ Docs & License: https://fullcalendar.io/
         };
         // Date Utils
         // -----------------------------------------------------------------------------------------------------------------
-        // Returns a DateMarker for the current date, as defined by the client's computer or from the `now` option
+        // Returns a DateMarker for the current date, as defined by the clients's computer or from the `now` option
         Calendar.prototype.getNow = function () {
             var now = this.opt('now');
             if (typeof now === 'function') {
