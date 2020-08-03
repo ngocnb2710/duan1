@@ -59,7 +59,7 @@
                     @endif
                 @else
                     <li>
-                        <a id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        <a id="navbarDropdown" href="/dashboard" role="button" data-toggle="dropdown" aria-haspopup="true"
                            aria-expanded="false" v-pre>
                             <i class="fa fa-user-o"></i>{{ Auth::user()->name }}
                         </a>

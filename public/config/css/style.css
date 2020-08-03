@@ -718,39 +718,14 @@ textarea.input {
 /*=========================================================
 	04 -> CATEGORY SHOP
 ===========================================================*/
+.shop-wrapper {
+
+}
 
 .shop {
     position: relative;
-    overflow: hidden;
+    height: 100%;
     margin: 15px 0px;
-}
-
-.shop:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0px;
-    width: 60%;
-    background: #D10024;
-    opacity: 0.9;
-    -webkit-transform: skewX(-45deg);
-    -ms-transform: skewX(-45deg);
-    transform: skewX(-45deg);
-}
-
-.shop:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 1px;
-    width: 100%;
-    background: #D10024;
-    opacity: 0.9;
-    -webkit-transform: skewX(-45deg) translateX(-100%);
-    -ms-transform: skewX(-45deg) translateX(-100%);
-    transform: skewX(-45deg) translateX(-100%);
 }
 
 .shop .shop-img {
