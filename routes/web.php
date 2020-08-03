@@ -18,6 +18,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'ClientsController@index');
 Route::get('/dashboard', 'AdminController@index');
 Route::group(['prefix'=>'category'],function(){
     Route::get('list', 'CategoryController@index');
