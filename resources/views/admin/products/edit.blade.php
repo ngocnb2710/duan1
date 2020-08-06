@@ -1,4 +1,5 @@
 @extends('admin.dashboard')
+@section('title', 'Sửa sản phẩm')
 @section('content_dashboard')
     <form action="/product/edit/{{$product->id}}" method="post">
         @csrf

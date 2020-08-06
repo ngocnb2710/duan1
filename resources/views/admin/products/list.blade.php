@@ -1,4 +1,5 @@
 @extends('admin.dashboard')
+@section('title', 'Danh sách sản phẩm')
 @section('content_dashboard')
     <div class="row content-header">
         <h1 class="col-sm">Products</h1>

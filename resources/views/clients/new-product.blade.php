@@ -4,7 +4,6 @@
             <div class="col-md-12">
                 <div class="section-title">
                     <h3 class="title">New Product</h3>
-
                 </div>
             </div>
             <div class="col-md-12">
@@ -19,11 +18,8 @@
                                             <img src="{{$item->image}}" alt="">
                                         </div>
                                         <div class="product-body">
-                                            <h3 class="product-name"><a
-                                                    href="#">{{$item->name}}</a></h3>
+                                            <h3 class="product-name"><a href="#">{{$item->name}}</a></h3>
                                             <h4 class="product-price">{{$item->price}}đ</h4>
-
-
                                         </div>
                                         <div class="add-to-cart">
                                             <a href="/cart/addCart/{{$item->id}}">

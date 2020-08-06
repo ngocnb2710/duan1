@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Dashboard</title>
+    <title>@yield('title', 'Dashboard')</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->
@@ -37,7 +37,7 @@
         <a href="/dashboard" class="brand-link">
             <img src="/style/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
                  style="opacity: .8">
-            <span class="brand-text font-weight-light">Dashboard</span>
+            <span class="brand-text font-weight-light">@yield('title', 'Dashboard')</span>
         </a>
 
         <!-- Sidebar -->
@@ -95,9 +95,6 @@
             </div>
         </section>
     </div>
-    <footer class="main-footer">
-        <strong>Copyright &copy; <a href="https://www.facebook.com/nguyen.ngoc2710/">Ngoc Developer</a>.</strong>
-    </footer>
 
     <aside class="control-sidebar control-sidebar-dark">
         <!-- Control sidebar content goes here -->

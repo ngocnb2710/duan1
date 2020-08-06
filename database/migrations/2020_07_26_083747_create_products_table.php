@@ -19,6 +19,7 @@ class CreateProductsTable extends Migration
             $table->string('image');
             $table->string('price');
             $table->text('description');
+            $table->text('key');
             $table->integer('cate_id');
             $table->integer('is_active')->default(1);
             $table->timestamps();
